@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Jogo - NodeGirls</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body onload="loadTabuleiro();">
+	<div class="tabuleiro">
+		<div class="content" id="tab"></div>
+		<div class="box-pins"></div>
+	</div>
+	<div class="sidebar">
+		<div class="content">
+			<br><br>
+			<img src="assets/img/logo-positivo.png" class="logo">
+			<div class="randon">
+				<button class="btn btn-primary" onclick="rando();">Jogar dados</button>
+				<p><span id="result_num">Inicio</span></p>
+				<br><br>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<br><br>
+			<h2 class="text-center">Jogo de Tabuleiro NodeGirls</h2>
+		</div>
+	</div>
+	<div class="overlay">
+		<div class="modal">
+			<h2 class="text-center"></h2>
+			<hr>
+			<p></p>
+			<a class="btn btn-primary" style="position: static;width: 200px;margin: auto;display: block;" id="resp">Resposta</a>
+			<br>
+			<p id="res" class="text-center"></p>
+			<button class="btn btn-success pull-left" onclick="closeModal();">Acertou</button>
+			<button class="btn btn-danger pull-right" onclick="error();">Errou</button>
+
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
