@@ -1,31 +1,35 @@
-html, body{
+html, body {
 	margin: 0px;
 	padding: 0px;
 }
 
-.tabuleiro{
+.tabuleiro {
 	width: 75%;
-	height: 75vh;			
+	height: 75vh;
 	float: left;
 	position: relative;
 }
 
-.sidebar{
+.sidebar {
 	width: 25%;
 	height: 75vh;
 	float: left;
 }
 
-.sidebar button{
+.sidebar button {
 	width: 200px;
 	display: block;
 	margin:20px auto;
 }
 
-img.logo{
-	width: 300px;
-	margin:auto;
-	display: block;
+img.logo {
+	height: auto;
+	margin: auto;
+	width: 50vw;
+}
+
+.logo-jogo {
+  width: 100%;
 }
 
 .sidebar #result_num {
@@ -41,7 +45,7 @@ img.logo{
     color: #FFF;
 }
 
-.content{
+.content {
 	background-color: transparent;
 	margin: 15px;
 	width: calc(100% - 30px);
@@ -50,7 +54,7 @@ img.logo{
 	border-radius: 3px;
 }
 
-.step{
+.step {
 	background-color: #422d2e;
 	color: #FFF;
 	width: 120px;
@@ -66,16 +70,16 @@ img.logo{
 	text-transform: uppercase;
 }
 
-.step:nth-of-type(2){
+.step:nth-of-type(2) {
 	background-color: rgba(218, 82, 121, 0.75);
 }
 
-.step:nth-of-type(3){
+.step:nth-of-type(3) {
 	border-top-right-radius: 50px;
 	background-color: rgba(218, 82, 121, 0.50)
 }
 
-.step:nth-of-type(4){
+.step:nth-of-type(4) {
     position: relative;
     top: 100px;
     left: -120px;
@@ -118,7 +122,7 @@ img.logo{
     top: 0px;
     border-top-left-radius: 50px;
     background-color: rgba(218, 82, 121, 0.50);
-}		
+}
 
 .step:nth-of-type(10) {
     position: relative;
@@ -182,7 +186,7 @@ img.logo{
     left: 360px;
     top: 280px;
     background-color: rgba(218, 82, 121, 0.50);
-}		
+}
 
 .step:nth-of-type(19) {
     position: relative;
@@ -251,7 +255,7 @@ img.logo{
     background-color: #422d2e;
 }
 
-.pin{
+.pin {
     position: absolute;
     top: 70px;
     left: 48px;
@@ -262,37 +266,37 @@ img.logo{
     border-radius: 50%;
 }
 
-.pin:nth-of-type(1){
+.pin:nth-of-type(1) {
 	background-image: url(../img/maravilha.jpg);
 	background-size: 60px;
 	z-index: 9;
 }
 
-.pin:nth-of-type(2){
+.pin:nth-of-type(2) {
 	background-image: url(../img/sailor.jpg);
 	background-size: 60px;
 	z-index: 8;
 }
 
-.pin:nth-of-type(3){
+.pin:nth-of-type(3) {
 	background-image: url(../img/sakura.jpg);
 	background-size: 60px;
 	z-index: 7;
 }
 
-.pin:nth-of-type(4){
+.pin:nth-of-type(4) {
 	background-image: url(../img/mulan.jpg);
 	background-size: 60px;
 	z-index: 6;
 }
 
-.pin:nth-of-type(5){
+.pin:nth-of-type(5) {
 	background-image: url(../img/jean.jpg);
 	background-size: 60px;
 	z-index: 5;
 }
 
-.overlay{
+.overlay {
 	background-color: rgba(0,0,0,0.3);
 	width: 100%;
 	height: 100%;
@@ -304,7 +308,7 @@ img.logo{
 	display: none;
 }
 
-.modal{
+.modal {
 	width: 700px;
 	height: 600px;
 	background-color: #FFF;
@@ -315,14 +319,14 @@ img.logo{
 	padding: 30px;
 }
 
-.modal button:nth-of-type(1){
+.modal button:nth-of-type(1) {
 	position: absolute;
 	bottom: 30px;
 	left: 50px;
 }
 
 
-.modal button:nth-of-type(2){
+.modal button:nth-of-type(2) {
 	position: absolute;
 	bottom: 30px;
 	right: 50px;
