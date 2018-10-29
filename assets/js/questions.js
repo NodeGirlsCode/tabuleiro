@@ -1,4 +1,4 @@
-var perguntas = [
+var questions = [
 	{
 		q: 'Ishiii, deu ruim... Passe a vez',
 		r: ':('
@@ -8,7 +8,7 @@ var perguntas = [
 		r: 'O Node.js é uma plataforma, ou um ambiente de execução, para códigos javascript escrita em cima da engine de Javascript do Chrome, a V8. Ele é todo baseado em eventos e suas operações são não-bloqueantes, o que lhe confere bastante eficiência e leveza.'
 	},
 	{
-		q: 'Uau, nem precisa responder! Pode avançar!',
+		q: 'Uau, nem precisa responder, jogue novamente!',
 		r: '<3'
 	},
 	{
@@ -20,7 +20,7 @@ var perguntas = [
 		r: 'Faça um exemplo'
 	},
 	{
-		q: 'Você deu sorte! Pode avançar sem responder!',
+		q: 'Você deu sorte! Jogue novamente',
 		r: 'XD'
 	},
 	{
@@ -44,7 +44,7 @@ var perguntas = [
 		r: 'Rotas são as configurações que criamos para cada url específica que queremos atender no nosso sistema server-side implementado em javascript.'
 	},
 	{
-		q: 'Você deu sorte! Pode avançar!',
+		q: 'Você deu sorte! Pule para a próxima casa',
 		r: 'XD'
 	},
 	{
@@ -56,7 +56,7 @@ var perguntas = [
 		r: 'Os  sistemas  para  web  desenvolvidos  nativamente  sobreplataforma .NET, Java, PHP, Ruby  ou Python  possuem  uma característica  em  comum:  eles  paralisam  um  processamento enquanto  utilizam  um  I/O  no  servidor.  Essa  paralisação  é conhecida como modelo bloqueante (Blocking-Thread). Em um servidor web, podemos visualizá-lo de forma ampla e funcional. Vamos considerar que cada processo é uma requisição feita  pelo  usuário.  Com  o  decorrer  da  aplicação,  novos  usuários vão acessando-a, gerando uma requisição no servidor. Um sistema bloqueante  enfileira  as  requisições  e  depois  as  processa,  uma  a uma,  não  permitindo  múltiplos  processamentos.  Enquanto  uma requisição  é  processada,  as  demais  ficam  em  espera,  mantendo uma fila de requisições ociosas por um período de tempo.'
 	},
 	{
-		q: 'Eitah! Essa rodada você não joga!',
+		q: 'Eitah! Fica uma rodada sem jogar',
 		r: ':('
 	},
 	{
