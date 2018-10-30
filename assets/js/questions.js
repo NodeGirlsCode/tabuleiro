@@ -108,5 +108,5 @@ var questions = [
 		q: 'Descreva com suas palavras o que é o Node.js.',
 		r: 'O Node.js é uma plataforma, ou um ambiente de execução para códigos javascript escrita em cima da engine de Javascript do Chrome, a V8. Ele é todo baseado em eventos e suas operações são não-bloqueantes, o que lhe confere bastante eficiência e leveza.'
 	}
-	
+
 ]

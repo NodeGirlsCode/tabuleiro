@@ -10,7 +10,7 @@ var questions = [
 	{
 		q: 'Descreva com suas palavras o que é o Node.js.',
 		r: 'O Node.js é uma plataforma, ou um ambiente de execução para códigos javascript escrita em cima da engine de Javascript do Chrome, a V8. Ele é todo baseado em eventos e suas operações são não-bloqueantes, o que lhe confere bastante eficiência e leveza.'
-	},	
+	},
 	{
 		q: 'Uau, nem precisa responder, jogue novamente',
 		r: '<3'
@@ -70,7 +70,7 @@ var questions = [
 	{
 		q: 'Ishiii, deu ruim.. passe a vez',
 		r: ':('
-	},	
+	},
 	{
 		q: 'O que é callbackhell?',
 		r: 'são callbacks encadeados, em    certos    momentos,inevitavelmente  implementaremos  diversas  funções  assíncronas, que serão encadeadas uma na outra por meio das suas funções de callback.  Assim,  tal  processamento  terá  uma  sequência  de execução.'
@@ -120,12 +120,12 @@ if(window.localStorage.getItem("num_g")!=undefined &&window.localStorage.getItem
 
 function createGroups(){
 	GLOBAL_QTD     = $("#qtd_groups").val();
-	
+
 	window.location = 'jogo.html';
 	window.localStorage.setItem("num_g", GLOBAL_QTD);
 }
 
-function rando(){	
+function rando(){
 	var num_sort = (Math.floor(Math.random() * 6))+ 1;
 	document.getElementById("result_num").innerHTML = '';
 	setTimeout(function(){
@@ -137,20 +137,20 @@ function rando(){
 }
 
 function loadTabuleiro(){
-	var arrnNames = ['Mulher Maavilha', 'Sailor Moon', 'Sakura Card Captors ', 'Mulan', 'Jean Grey'];	
+	var arrnNames = ['Mulher Maavilha', 'Sailor Moon', 'Sakura Card Captors ', 'Mulan', 'Jean Grey'];
 
 	for (var i = 0; i < GLOBAL_QTD; i++) {
 		groups.push({ name  : arrnNames[i], score : 1});
-	}	
+	}
 
 	var steps='';
-	for(i=0; i<27; i++){				
+	for(i=0; i<27; i++){
 		if(i==0)
 			steps += '<div class="step">Inicio</div>';
 		else if(i==26)
 			steps += '<div class="step">Chegada</div>';
 		else
-			steps += '<div class="step">'+i+'</div>';
+			steps += '<div class="step"><span>'+i+'</span></div>';
 	}
 
 	document.getElementById("tab").innerHTML = steps;
@@ -175,11 +175,11 @@ function movePin(num_step, num_sort, pin){
 
 	$(".pin:nth-of-type("+pin+")").animate({
 		top: current_step.top,
-		left:current_step.left, 
+		left:current_step.left,
 	}, 800);
 
-	
-	
+
+
 }
 
 function youWin(){
@@ -196,7 +196,7 @@ function pergunta(question){
 	$("#res").text('');
 	$(".overlay").fadeIn(800);
 	$(".modal h2").text(question.q);
-	
+
 }
 
 function closeModal(){
@@ -208,7 +208,7 @@ function loadPin(num){
 	var pins = '';
 	for (var i = 0; i < num; i++) {
 		pins += '<span class="pin" data-step="1">pin</span>';
-	}	
+	}
 
 	$(".box-pins").html(pins);
 }
@@ -238,5 +238,3 @@ function resp(question){
 		$("#res").text(question.r)
 	})
 }
-
-
